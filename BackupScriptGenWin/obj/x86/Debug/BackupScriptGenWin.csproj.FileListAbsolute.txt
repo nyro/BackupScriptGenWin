@@ -1,0 +1,10 @@
+d:\dokumente\visual studio 2010\Projects\BackupScriptGenWin\BackupScriptGenWin\bin\Debug\BackupScriptGenWin.exe
+d:\dokumente\visual studio 2010\Projects\BackupScriptGenWin\BackupScriptGenWin\bin\Debug\BackupScriptGenWin.pdb
+d:\dokumente\visual studio 2010\Projects\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Debug\ResolveAssemblyReference.cache
+d:\dokumente\visual studio 2010\Projects\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Debug\BackupScriptGenWin.MainForm.resources
+d:\dokumente\visual studio 2010\Projects\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Debug\BackupScriptGenWin.Properties.Resources.resources
+d:\dokumente\visual studio 2010\Projects\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Debug\GenerateResource.read.1.tlog
+d:\dokumente\visual studio 2010\Projects\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Debug\GenerateResource.write.1.tlog
+d:\dokumente\visual studio 2010\Projects\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Debug\BackupScriptGenWin.exe
+d:\dokumente\visual studio 2010\Projects\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Debug\BackupScriptGenWin.pdb
+d:\dokumente\visual studio 2010\Projects\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Debug\BackupScriptGenWin.BackupFolderDialog.resources

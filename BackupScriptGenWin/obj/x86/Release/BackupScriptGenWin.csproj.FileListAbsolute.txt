@@ -1,0 +1,20 @@
+d:\dokumente\visual studio 2010\Projects\BackupScriptGenWin\BackupScriptGenWin\bin\Release\BackupScriptGenWin.exe
+d:\dokumente\visual studio 2010\Projects\BackupScriptGenWin\BackupScriptGenWin\bin\Release\BackupScriptGenWin.pdb
+d:\dokumente\visual studio 2010\Projects\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\ResolveAssemblyReference.cache
+d:\dokumente\visual studio 2010\Projects\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\BackupScriptGenWin.BackupFolderDialog.resources
+d:\dokumente\visual studio 2010\Projects\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\BackupScriptGenWin.MainForm.resources
+d:\dokumente\visual studio 2010\Projects\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\BackupScriptGenWin.Properties.Resources.resources
+d:\dokumente\visual studio 2010\Projects\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\GenerateResource.read.1.tlog
+d:\dokumente\visual studio 2010\Projects\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\GenerateResource.write.1.tlog
+d:\dokumente\visual studio 2010\Projects\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\BackupScriptGenWin.exe
+d:\dokumente\visual studio 2010\Projects\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\BackupScriptGenWin.pdb
+S:\dev\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\BackupScriptGenWin.exe
+S:\dev\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\BackupScriptGenWin.pdb
+S:\dev\BackupScriptGenWin\BackupScriptGenWin\bin\Release\BackupScriptGenWin.exe
+S:\dev\BackupScriptGenWin\BackupScriptGenWin\bin\Release\BackupScriptGenWin.pdb
+S:\dev\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\ResolveAssemblyReference.cache
+S:\dev\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\BackupScriptGenWin.BackupFolderDialog.resources
+S:\dev\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\BackupScriptGenWin.MainForm.resources
+S:\dev\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\BackupScriptGenWin.Properties.Resources.resources
+S:\dev\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\GenerateResource.read.1.tlog
+S:\dev\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\GenerateResource.write.1.tlog
