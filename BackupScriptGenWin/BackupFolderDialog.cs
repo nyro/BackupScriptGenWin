@@ -67,5 +67,63 @@ namespace BackupScriptGenWin
         {
             this.Height = 180;
         }
+
+        private void MirrorCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (MirrorCheckBox.Checked)
+            {
+                SubfoldersCheckBox.Enabled = false;
+                SubfoldersCheckBox.Checked = true;
+
+                PurgeCheckBox.Enabled = false;
+                PurgeCheckBox.Checked = true;
+            }
+            else
+            {
+                SubfoldersCheckBox.Enabled = true;
+
+                PurgeCheckBox.Enabled = true;
+                PurgeCheckBox.Checked = false;
+            }
+        }
+
+        private void SubfoldersCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (SubfoldersCheckBox.Checked)
+            {
+                EmptySubfoldersCheckBox.Enabled = true;
+                EmptySubfoldersCheckBox.Checked = true;
+            }
+            else
+            {
+                EmptySubfoldersCheckBox.Enabled = false;
+                EmptySubfoldersCheckBox.Checked = false;
+            }
+        }
+
+        private void SubfoldersCheckBox_EnabledChanged(object sender, EventArgs e)
+        {
+            if (SubfoldersCheckBox.Enabled)
+            {
+                EmptySubfoldersCheckBox.Enabled = true;
+            }
+            else
+            {
+                EmptySubfoldersCheckBox.Enabled = false;
+            }
+        }
+
+        private void MovCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (MovCheckBox.Checked)
+            {
+                MoveCheckBox.Enabled = true;
+            }
+            else
+            {
+                MoveCheckBox.Enabled = false;
+                MoveCheckBox.Checked = false;
+            }
+        }
     }
 }

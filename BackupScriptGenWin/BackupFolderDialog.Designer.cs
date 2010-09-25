@@ -39,29 +39,29 @@
             this.TargetFolderTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.AdvancedTabPage = new System.Windows.Forms.TabPage();
-            this.CopyGroupBox = new System.Windows.Forms.GroupBox();
-            this.MirrorCheckBox = new System.Windows.Forms.CheckBox();
-            this.SubfoldersCheckBox = new System.Windows.Forms.CheckBox();
-            this.EmptySubfoldersCheckBox = new System.Windows.Forms.CheckBox();
-            this.MovCheckBox = new System.Windows.Forms.CheckBox();
-            this.SaveDefaultCheckBox = new System.Windows.Forms.CheckBox();
-            this.MoveCheckBox = new System.Windows.Forms.CheckBox();
-            this.PurgeCheckBox = new System.Windows.Forms.CheckBox();
-            this.ResumeCheckBox = new System.Windows.Forms.CheckBox();
-            this.BackupCheckBox = new System.Windows.Forms.CheckBox();
             this.FileGroupBox = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.CopyGroupBox = new System.Windows.Forms.GroupBox();
+            this.BackupCheckBox = new System.Windows.Forms.CheckBox();
+            this.ResumeCheckBox = new System.Windows.Forms.CheckBox();
+            this.PurgeCheckBox = new System.Windows.Forms.CheckBox();
+            this.MoveCheckBox = new System.Windows.Forms.CheckBox();
+            this.MovCheckBox = new System.Windows.Forms.CheckBox();
+            this.EmptySubfoldersCheckBox = new System.Windows.Forms.CheckBox();
+            this.SubfoldersCheckBox = new System.Windows.Forms.CheckBox();
+            this.MirrorCheckBox = new System.Windows.Forms.CheckBox();
+            this.SaveDefaultCheckBox = new System.Windows.Forms.CheckBox();
             this.FolderAddTabControl.SuspendLayout();
             this.BaseTabPage.SuspendLayout();
             this.AdvancedTabPage.SuspendLayout();
-            this.CopyGroupBox.SuspendLayout();
             this.FileGroupBox.SuspendLayout();
+            this.CopyGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // DialogOkButton
@@ -187,6 +187,92 @@
             this.AdvancedTabPage.UseVisualStyleBackColor = true;
             this.AdvancedTabPage.Enter += new System.EventHandler(this.AdvancedTabPage_Enter);
             // 
+            // FileGroupBox
+            // 
+            this.FileGroupBox.Controls.Add(this.checkBox7);
+            this.FileGroupBox.Controls.Add(this.checkBox6);
+            this.FileGroupBox.Controls.Add(this.checkBox5);
+            this.FileGroupBox.Controls.Add(this.checkBox4);
+            this.FileGroupBox.Controls.Add(this.checkBox3);
+            this.FileGroupBox.Controls.Add(this.checkBox2);
+            this.FileGroupBox.Controls.Add(this.checkBox1);
+            this.FileGroupBox.Location = new System.Drawing.Point(214, 6);
+            this.FileGroupBox.Name = "FileGroupBox";
+            this.FileGroupBox.Size = new System.Drawing.Size(200, 193);
+            this.FileGroupBox.TabIndex = 1;
+            this.FileGroupBox.TabStop = false;
+            this.FileGroupBox.Text = "Dateiauswahloptionen";
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Location = new System.Drawing.Point(6, 157);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(175, 17);
+            this.checkBox7.TabIndex = 6;
+            this.checkBox7.Text = "Optimierte Dateien einschließen";
+            this.checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Location = new System.Drawing.Point(6, 134);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(177, 17);
+            this.checkBox6.TabIndex = 5;
+            this.checkBox6.Text = "Identische Dateien einschließen";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(6, 111);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(183, 17);
+            this.checkBox5.TabIndex = 4;
+            this.checkBox5.Text = "Einsame Dat./Verz. ausschließen";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(6, 88);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(197, 17);
+            this.checkBox4.TabIndex = 3;
+            this.checkBox4.Text = "Zusätzliche Dat./Verz. ausschließen";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(6, 65);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(158, 17);
+            this.checkBox3.TabIndex = 2;
+            this.checkBox3.Text = "Ältere Dateien ausschließen";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(6, 42);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(166, 17);
+            this.checkBox2.TabIndex = 1;
+            this.checkBox2.Text = "Neuere Dateien ausschließen";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(6, 19);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(181, 17);
+            this.checkBox1.TabIndex = 0;
+            this.checkBox1.Text = "Geänderte Dateien ausschließen";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // CopyGroupBox
             // 
             this.CopyGroupBox.Controls.Add(this.BackupCheckBox);
@@ -204,15 +290,69 @@
             this.CopyGroupBox.TabStop = false;
             this.CopyGroupBox.Text = "Kopieroptionen";
             // 
-            // MirrorCheckBox
+            // BackupCheckBox
             // 
-            this.MirrorCheckBox.AutoSize = true;
-            this.MirrorCheckBox.Location = new System.Drawing.Point(6, 19);
-            this.MirrorCheckBox.Name = "MirrorCheckBox";
-            this.MirrorCheckBox.Size = new System.Drawing.Size(157, 17);
-            this.MirrorCheckBox.TabIndex = 0;
-            this.MirrorCheckBox.Text = "Verzeichnisstruktur spiegeln";
-            this.MirrorCheckBox.UseVisualStyleBackColor = true;
+            this.BackupCheckBox.AutoSize = true;
+            this.BackupCheckBox.Location = new System.Drawing.Point(45, 157);
+            this.BackupCheckBox.Name = "BackupCheckBox";
+            this.BackupCheckBox.Size = new System.Drawing.Size(33, 17);
+            this.BackupCheckBox.TabIndex = 7;
+            this.BackupCheckBox.Text = "B";
+            this.BackupCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // ResumeCheckBox
+            // 
+            this.ResumeCheckBox.AutoSize = true;
+            this.ResumeCheckBox.Location = new System.Drawing.Point(6, 157);
+            this.ResumeCheckBox.Name = "ResumeCheckBox";
+            this.ResumeCheckBox.Size = new System.Drawing.Size(33, 17);
+            this.ResumeCheckBox.TabIndex = 6;
+            this.ResumeCheckBox.Text = "Z";
+            this.ResumeCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // PurgeCheckBox
+            // 
+            this.PurgeCheckBox.AutoSize = true;
+            this.PurgeCheckBox.Location = new System.Drawing.Point(6, 134);
+            this.PurgeCheckBox.Name = "PurgeCheckBox";
+            this.PurgeCheckBox.Size = new System.Drawing.Size(107, 17);
+            this.PurgeCheckBox.TabIndex = 5;
+            this.PurgeCheckBox.Text = "Dateien Spiegeln";
+            this.PurgeCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // MoveCheckBox
+            // 
+            this.MoveCheckBox.AutoSize = true;
+            this.MoveCheckBox.Enabled = false;
+            this.MoveCheckBox.Location = new System.Drawing.Point(22, 111);
+            this.MoveCheckBox.Name = "MoveCheckBox";
+            this.MoveCheckBox.Size = new System.Drawing.Size(119, 17);
+            this.MoveCheckBox.TabIndex = 4;
+            this.MoveCheckBox.Text = "Ordner verschieben";
+            this.MoveCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // MovCheckBox
+            // 
+            this.MovCheckBox.AutoSize = true;
+            this.MovCheckBox.Location = new System.Drawing.Point(6, 88);
+            this.MovCheckBox.Name = "MovCheckBox";
+            this.MovCheckBox.Size = new System.Drawing.Size(124, 17);
+            this.MovCheckBox.TabIndex = 3;
+            this.MovCheckBox.Text = "Dateien verschieben";
+            this.MovCheckBox.UseVisualStyleBackColor = true;
+            this.MovCheckBox.CheckedChanged += new System.EventHandler(this.MovCheckBox_CheckedChanged);
+            // 
+            // EmptySubfoldersCheckBox
+            // 
+            this.EmptySubfoldersCheckBox.AutoSize = true;
+            this.EmptySubfoldersCheckBox.Checked = true;
+            this.EmptySubfoldersCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.EmptySubfoldersCheckBox.Location = new System.Drawing.Point(22, 65);
+            this.EmptySubfoldersCheckBox.Name = "EmptySubfoldersCheckBox";
+            this.EmptySubfoldersCheckBox.Size = new System.Drawing.Size(170, 17);
+            this.EmptySubfoldersCheckBox.TabIndex = 2;
+            this.EmptySubfoldersCheckBox.Text = "Auch leere Unterverzeichnisse";
+            this.EmptySubfoldersCheckBox.UseVisualStyleBackColor = true;
             // 
             // SubfoldersCheckBox
             // 
@@ -225,28 +365,19 @@
             this.SubfoldersCheckBox.TabIndex = 1;
             this.SubfoldersCheckBox.Text = "Unterverzeichnisse kopieren";
             this.SubfoldersCheckBox.UseVisualStyleBackColor = true;
+            this.SubfoldersCheckBox.CheckedChanged += new System.EventHandler(this.SubfoldersCheckBox_CheckedChanged);
+            this.SubfoldersCheckBox.EnabledChanged += new System.EventHandler(this.SubfoldersCheckBox_EnabledChanged);
             // 
-            // EmptySubfoldersCheckBox
+            // MirrorCheckBox
             // 
-            this.EmptySubfoldersCheckBox.AutoSize = true;
-            this.EmptySubfoldersCheckBox.Checked = true;
-            this.EmptySubfoldersCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.EmptySubfoldersCheckBox.Location = new System.Drawing.Point(22, 65);
-            this.EmptySubfoldersCheckBox.Name = "EmptySubfoldersCheckBox";
-            this.EmptySubfoldersCheckBox.Size = new System.Drawing.Size(132, 17);
-            this.EmptySubfoldersCheckBox.TabIndex = 2;
-            this.EmptySubfoldersCheckBox.Text = "Leere Unterveichnisse";
-            this.EmptySubfoldersCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // MovCheckBox
-            // 
-            this.MovCheckBox.AutoSize = true;
-            this.MovCheckBox.Location = new System.Drawing.Point(6, 88);
-            this.MovCheckBox.Name = "MovCheckBox";
-            this.MovCheckBox.Size = new System.Drawing.Size(124, 17);
-            this.MovCheckBox.TabIndex = 3;
-            this.MovCheckBox.Text = "Dateien verschieben";
-            this.MovCheckBox.UseVisualStyleBackColor = true;
+            this.MirrorCheckBox.AutoSize = true;
+            this.MirrorCheckBox.Location = new System.Drawing.Point(6, 19);
+            this.MirrorCheckBox.Name = "MirrorCheckBox";
+            this.MirrorCheckBox.Size = new System.Drawing.Size(157, 17);
+            this.MirrorCheckBox.TabIndex = 0;
+            this.MirrorCheckBox.Text = "Verzeichnisstruktur spiegeln";
+            this.MirrorCheckBox.UseVisualStyleBackColor = true;
+            this.MirrorCheckBox.CheckedChanged += new System.EventHandler(this.MirrorCheckBox_CheckedChanged);
             // 
             // SaveDefaultCheckBox
             // 
@@ -259,132 +390,6 @@
             this.SaveDefaultCheckBox.Text = "Als Standard speichern";
             this.SaveDefaultCheckBox.UseVisualStyleBackColor = true;
             this.SaveDefaultCheckBox.Visible = false;
-            // 
-            // MoveCheckBox
-            // 
-            this.MoveCheckBox.AutoSize = true;
-            this.MoveCheckBox.Location = new System.Drawing.Point(22, 111);
-            this.MoveCheckBox.Name = "MoveCheckBox";
-            this.MoveCheckBox.Size = new System.Drawing.Size(119, 17);
-            this.MoveCheckBox.TabIndex = 4;
-            this.MoveCheckBox.Text = "Ordner verschieben";
-            this.MoveCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // PurgeCheckBox
-            // 
-            this.PurgeCheckBox.AutoSize = true;
-            this.PurgeCheckBox.Location = new System.Drawing.Point(6, 134);
-            this.PurgeCheckBox.Name = "PurgeCheckBox";
-            this.PurgeCheckBox.Size = new System.Drawing.Size(107, 17);
-            this.PurgeCheckBox.TabIndex = 5;
-            this.PurgeCheckBox.Text = "Dateien Spiegeln";
-            this.PurgeCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // ResumeCheckBox
-            // 
-            this.ResumeCheckBox.AutoSize = true;
-            this.ResumeCheckBox.Location = new System.Drawing.Point(6, 157);
-            this.ResumeCheckBox.Name = "ResumeCheckBox";
-            this.ResumeCheckBox.Size = new System.Drawing.Size(33, 17);
-            this.ResumeCheckBox.TabIndex = 6;
-            this.ResumeCheckBox.Text = "Z";
-            this.ResumeCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // BackupCheckBox
-            // 
-            this.BackupCheckBox.AutoSize = true;
-            this.BackupCheckBox.Location = new System.Drawing.Point(45, 157);
-            this.BackupCheckBox.Name = "BackupCheckBox";
-            this.BackupCheckBox.Size = new System.Drawing.Size(33, 17);
-            this.BackupCheckBox.TabIndex = 7;
-            this.BackupCheckBox.Text = "B";
-            this.BackupCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // FileGroupBox
-            // 
-            this.FileGroupBox.Controls.Add(this.checkBox7);
-            this.FileGroupBox.Controls.Add(this.checkBox6);
-            this.FileGroupBox.Controls.Add(this.checkBox5);
-            this.FileGroupBox.Controls.Add(this.checkBox4);
-            this.FileGroupBox.Controls.Add(this.checkBox3);
-            this.FileGroupBox.Controls.Add(this.checkBox2);
-            this.FileGroupBox.Controls.Add(this.checkBox1);
-            this.FileGroupBox.Location = new System.Drawing.Point(214, 6);
-            this.FileGroupBox.Name = "FileGroupBox";
-            this.FileGroupBox.Size = new System.Drawing.Size(200, 193);
-            this.FileGroupBox.TabIndex = 1;
-            this.FileGroupBox.TabStop = false;
-            this.FileGroupBox.Text = "Dateiauswahloptionen";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 19);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(181, 17);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Geänderte Dateien ausschließen";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(6, 42);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(166, 17);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Neuere Dateien ausschließen";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(6, 65);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(158, 17);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "Ältere Dateien ausschließen";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(6, 88);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(197, 17);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "Zusätzliche Dat./Verz. ausschließen";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(6, 111);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(183, 17);
-            this.checkBox5.TabIndex = 4;
-            this.checkBox5.Text = "Einsame Dat./Verz. ausschließen";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(6, 134);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(177, 17);
-            this.checkBox6.TabIndex = 5;
-            this.checkBox6.Text = "Identische Dateien einschließen";
-            this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // checkBox7
-            // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(6, 157);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(175, 17);
-            this.checkBox7.TabIndex = 6;
-            this.checkBox7.Text = "Optimierte Dateien einschließen";
-            this.checkBox7.UseVisualStyleBackColor = true;
             // 
             // BackupFolderDialog
             // 
@@ -405,10 +410,10 @@
             this.BaseTabPage.ResumeLayout(false);
             this.BaseTabPage.PerformLayout();
             this.AdvancedTabPage.ResumeLayout(false);
-            this.CopyGroupBox.ResumeLayout(false);
-            this.CopyGroupBox.PerformLayout();
             this.FileGroupBox.ResumeLayout(false);
             this.FileGroupBox.PerformLayout();
+            this.CopyGroupBox.ResumeLayout(false);
+            this.CopyGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

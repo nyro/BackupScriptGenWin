@@ -18,3 +18,13 @@ S:\dev\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\BackupScriptGenWin.
 S:\dev\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\BackupScriptGenWin.Properties.Resources.resources
 S:\dev\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\GenerateResource.read.1.tlog
 S:\dev\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\GenerateResource.write.1.tlog
+D:\Devel-Git\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\BackupScriptGenWin.exe
+D:\Devel-Git\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\BackupScriptGenWin.pdb
+D:\Devel-Git\BackupScriptGenWin\BackupScriptGenWin\bin\Release\BackupScriptGenWin.exe
+D:\Devel-Git\BackupScriptGenWin\BackupScriptGenWin\bin\Release\BackupScriptGenWin.pdb
+D:\Devel-Git\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Devel-Git\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\BackupScriptGenWin.BackupFolderDialog.resources
+D:\Devel-Git\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\BackupScriptGenWin.MainForm.resources
+D:\Devel-Git\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\BackupScriptGenWin.Properties.Resources.resources
+D:\Devel-Git\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\GenerateResource.read.1.tlog
+D:\Devel-Git\BackupScriptGenWin\BackupScriptGenWin\obj\x86\Release\GenerateResource.write.1.tlog
