@@ -51,16 +51,22 @@ namespace BackupScriptGenWin
                 this.DialogResult = System.Windows.Forms.DialogResult.Cancel;
         }
 
-        private void AdvancedTabPage_Enter(object sender, EventArgs e)
-        {
-            this.Height = 300;
-            SaveDefaultCheckBox.Visible = true;
-        }
-
         private void BaseTabPage_Enter(object sender, EventArgs e)
         {
             this.Height = 180;
             SaveDefaultCheckBox.Visible = false;
+        }
+
+        private void BlacklistTabPage_Enter(object sender, EventArgs e)
+        {
+            this.Height = 380;
+            SaveDefaultCheckBox.Visible = false;
+        }
+
+        private void AdvancedTabPage_Enter(object sender, EventArgs e)
+        {
+            this.Height = 286;
+            SaveDefaultCheckBox.Visible = true;
         }
 
         private void BackupFolderDialog_Load(object sender, EventArgs e)

@@ -57,17 +57,24 @@
             this.SubfoldersCheckBox = new System.Windows.Forms.CheckBox();
             this.MirrorCheckBox = new System.Windows.Forms.CheckBox();
             this.SaveDefaultCheckBox = new System.Windows.Forms.CheckBox();
+            this.BlacklistTabPage = new System.Windows.Forms.TabPage();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.BlacklistToolStrip = new System.Windows.Forms.ToolStrip();
+            this.BlacklistAddButton = new System.Windows.Forms.ToolStripButton();
+            this.BlacklistDeleteButton = new System.Windows.Forms.ToolStripButton();
             this.FolderAddTabControl.SuspendLayout();
             this.BaseTabPage.SuspendLayout();
             this.AdvancedTabPage.SuspendLayout();
             this.FileGroupBox.SuspendLayout();
             this.CopyGroupBox.SuspendLayout();
+            this.BlacklistTabPage.SuspendLayout();
+            this.BlacklistToolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // DialogOkButton
             // 
             this.DialogOkButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.DialogOkButton.Location = new System.Drawing.Point(396, 237);
+            this.DialogOkButton.Location = new System.Drawing.Point(396, 317);
             this.DialogOkButton.Name = "DialogOkButton";
             this.DialogOkButton.Size = new System.Drawing.Size(75, 23);
             this.DialogOkButton.TabIndex = 80;
@@ -79,7 +86,7 @@
             // 
             this.DialogCancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.DialogCancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.DialogCancelButton.Location = new System.Drawing.Point(315, 237);
+            this.DialogCancelButton.Location = new System.Drawing.Point(315, 317);
             this.DialogCancelButton.Name = "DialogCancelButton";
             this.DialogCancelButton.Size = new System.Drawing.Size(75, 23);
             this.DialogCancelButton.TabIndex = 90;
@@ -92,11 +99,12 @@
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.FolderAddTabControl.Controls.Add(this.BaseTabPage);
+            this.FolderAddTabControl.Controls.Add(this.BlacklistTabPage);
             this.FolderAddTabControl.Controls.Add(this.AdvancedTabPage);
             this.FolderAddTabControl.Location = new System.Drawing.Point(0, 0);
             this.FolderAddTabControl.Name = "FolderAddTabControl";
             this.FolderAddTabControl.SelectedIndex = 0;
-            this.FolderAddTabControl.Size = new System.Drawing.Size(485, 231);
+            this.FolderAddTabControl.Size = new System.Drawing.Size(485, 311);
             this.FolderAddTabControl.TabIndex = 92;
             // 
             // BaseTabPage
@@ -110,7 +118,7 @@
             this.BaseTabPage.Location = new System.Drawing.Point(4, 22);
             this.BaseTabPage.Name = "BaseTabPage";
             this.BaseTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.BaseTabPage.Size = new System.Drawing.Size(477, 205);
+            this.BaseTabPage.Size = new System.Drawing.Size(477, 285);
             this.BaseTabPage.TabIndex = 0;
             this.BaseTabPage.Text = "Basiseinstellungen";
             this.BaseTabPage.UseVisualStyleBackColor = true;
@@ -181,7 +189,7 @@
             this.AdvancedTabPage.Location = new System.Drawing.Point(4, 22);
             this.AdvancedTabPage.Name = "AdvancedTabPage";
             this.AdvancedTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.AdvancedTabPage.Size = new System.Drawing.Size(477, 205);
+            this.AdvancedTabPage.Size = new System.Drawing.Size(477, 285);
             this.AdvancedTabPage.TabIndex = 1;
             this.AdvancedTabPage.Text = "Erweitert";
             this.AdvancedTabPage.UseVisualStyleBackColor = true;
@@ -189,6 +197,8 @@
             // 
             // FileGroupBox
             // 
+            this.FileGroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.FileGroupBox.Controls.Add(this.checkBox7);
             this.FileGroupBox.Controls.Add(this.checkBox6);
             this.FileGroupBox.Controls.Add(this.checkBox5);
@@ -198,7 +208,7 @@
             this.FileGroupBox.Controls.Add(this.checkBox1);
             this.FileGroupBox.Location = new System.Drawing.Point(214, 6);
             this.FileGroupBox.Name = "FileGroupBox";
-            this.FileGroupBox.Size = new System.Drawing.Size(200, 193);
+            this.FileGroupBox.Size = new System.Drawing.Size(200, 179);
             this.FileGroupBox.TabIndex = 1;
             this.FileGroupBox.TabStop = false;
             this.FileGroupBox.Text = "Dateiauswahloptionen";
@@ -275,6 +285,8 @@
             // 
             // CopyGroupBox
             // 
+            this.CopyGroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.CopyGroupBox.Controls.Add(this.BackupCheckBox);
             this.CopyGroupBox.Controls.Add(this.ResumeCheckBox);
             this.CopyGroupBox.Controls.Add(this.PurgeCheckBox);
@@ -285,7 +297,7 @@
             this.CopyGroupBox.Controls.Add(this.MirrorCheckBox);
             this.CopyGroupBox.Location = new System.Drawing.Point(8, 6);
             this.CopyGroupBox.Name = "CopyGroupBox";
-            this.CopyGroupBox.Size = new System.Drawing.Size(200, 193);
+            this.CopyGroupBox.Size = new System.Drawing.Size(200, 179);
             this.CopyGroupBox.TabIndex = 0;
             this.CopyGroupBox.TabStop = false;
             this.CopyGroupBox.Text = "Kopieroptionen";
@@ -383,7 +395,7 @@
             // 
             this.SaveDefaultCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.SaveDefaultCheckBox.AutoSize = true;
-            this.SaveDefaultCheckBox.Location = new System.Drawing.Point(12, 243);
+            this.SaveDefaultCheckBox.Location = new System.Drawing.Point(12, 323);
             this.SaveDefaultCheckBox.Name = "SaveDefaultCheckBox";
             this.SaveDefaultCheckBox.Size = new System.Drawing.Size(135, 17);
             this.SaveDefaultCheckBox.TabIndex = 95;
@@ -391,13 +403,66 @@
             this.SaveDefaultCheckBox.UseVisualStyleBackColor = true;
             this.SaveDefaultCheckBox.Visible = false;
             // 
+            // BlacklistTabPage
+            // 
+            this.BlacklistTabPage.Controls.Add(this.BlacklistToolStrip);
+            this.BlacklistTabPage.Controls.Add(this.listView1);
+            this.BlacklistTabPage.Location = new System.Drawing.Point(4, 22);
+            this.BlacklistTabPage.Name = "BlacklistTabPage";
+            this.BlacklistTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.BlacklistTabPage.Size = new System.Drawing.Size(477, 285);
+            this.BlacklistTabPage.TabIndex = 2;
+            this.BlacklistTabPage.Text = "Dateien/Ordner ausschließen";
+            this.BlacklistTabPage.UseVisualStyleBackColor = true;
+            this.BlacklistTabPage.Enter += new System.EventHandler(this.BlacklistTabPage_Enter);
+            // 
+            // listView1
+            // 
+            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView1.Location = new System.Drawing.Point(3, 31);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(471, 251);
+            this.listView1.TabIndex = 0;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // BlacklistToolStrip
+            // 
+            this.BlacklistToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.BlacklistAddButton,
+            this.BlacklistDeleteButton});
+            this.BlacklistToolStrip.Location = new System.Drawing.Point(3, 3);
+            this.BlacklistToolStrip.Name = "BlacklistToolStrip";
+            this.BlacklistToolStrip.Size = new System.Drawing.Size(471, 25);
+            this.BlacklistToolStrip.TabIndex = 1;
+            this.BlacklistToolStrip.Text = "Blacklist Tools";
+            // 
+            // BlacklistAddButton
+            // 
+            this.BlacklistAddButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.BlacklistAddButton.Image = global::BackupScriptGenWin.Properties.Resources.add;
+            this.BlacklistAddButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BlacklistAddButton.Name = "BlacklistAddButton";
+            this.BlacklistAddButton.Size = new System.Drawing.Size(23, 22);
+            this.BlacklistAddButton.Text = "Hinzufügen";
+            // 
+            // BlacklistDeleteButton
+            // 
+            this.BlacklistDeleteButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.BlacklistDeleteButton.Image = global::BackupScriptGenWin.Properties.Resources.delete;
+            this.BlacklistDeleteButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BlacklistDeleteButton.Name = "BlacklistDeleteButton";
+            this.BlacklistDeleteButton.Size = new System.Drawing.Size(23, 22);
+            this.BlacklistDeleteButton.Text = "Entfernen";
+            // 
             // BackupFolderDialog
             // 
             this.AcceptButton = this.DialogOkButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.DialogCancelButton;
-            this.ClientSize = new System.Drawing.Size(483, 272);
+            this.ClientSize = new System.Drawing.Size(483, 352);
             this.Controls.Add(this.SaveDefaultCheckBox);
             this.Controls.Add(this.FolderAddTabControl);
             this.Controls.Add(this.DialogCancelButton);
@@ -414,6 +479,10 @@
             this.FileGroupBox.PerformLayout();
             this.CopyGroupBox.ResumeLayout(false);
             this.CopyGroupBox.PerformLayout();
+            this.BlacklistTabPage.ResumeLayout(false);
+            this.BlacklistTabPage.PerformLayout();
+            this.BlacklistToolStrip.ResumeLayout(false);
+            this.BlacklistToolStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -450,5 +519,10 @@
         private System.Windows.Forms.CheckBox BackupCheckBox;
         private System.Windows.Forms.CheckBox ResumeCheckBox;
         private System.Windows.Forms.CheckBox PurgeCheckBox;
+        private System.Windows.Forms.TabPage BlacklistTabPage;
+        private System.Windows.Forms.ToolStrip BlacklistToolStrip;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ToolStripButton BlacklistAddButton;
+        private System.Windows.Forms.ToolStripButton BlacklistDeleteButton;
     }
 }
