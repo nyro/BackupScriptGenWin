@@ -60,6 +60,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RobocopyJob.cs" />
     <EmbeddedResource Include="BackupFolderDialog.resx">
       <DependentUpon>BackupFolderDialog.cs</DependentUpon>
     </EmbeddedResource>

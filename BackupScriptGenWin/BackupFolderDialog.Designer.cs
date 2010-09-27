@@ -62,6 +62,7 @@
             this.SubfoldersCheckBox = new System.Windows.Forms.CheckBox();
             this.MirrorCheckBox = new System.Windows.Forms.CheckBox();
             this.SaveDefaultCheckBox = new System.Windows.Forms.CheckBox();
+            this.HybridCheckBox = new System.Windows.Forms.CheckBox();
             this.FolderAddTabControl.SuspendLayout();
             this.BaseTabPage.SuspendLayout();
             this.BlacklistTabPage.SuspendLayout();
@@ -118,7 +119,7 @@
             this.BaseTabPage.Location = new System.Drawing.Point(4, 22);
             this.BaseTabPage.Name = "BaseTabPage";
             this.BaseTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.BaseTabPage.Size = new System.Drawing.Size(423, 285);
+            this.BaseTabPage.Size = new System.Drawing.Size(426, 285);
             this.BaseTabPage.TabIndex = 0;
             this.BaseTabPage.Text = "Basiseinstellungen";
             this.BaseTabPage.UseVisualStyleBackColor = true;
@@ -189,7 +190,7 @@
             this.BlacklistTabPage.Location = new System.Drawing.Point(4, 22);
             this.BlacklistTabPage.Name = "BlacklistTabPage";
             this.BlacklistTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.BlacklistTabPage.Size = new System.Drawing.Size(432, 285);
+            this.BlacklistTabPage.Size = new System.Drawing.Size(426, 285);
             this.BlacklistTabPage.TabIndex = 2;
             this.BlacklistTabPage.Text = "Dateien/Ordner ausschließen";
             this.BlacklistTabPage.UseVisualStyleBackColor = true;
@@ -202,7 +203,7 @@
             this.BlacklistDeleteButton});
             this.BlacklistToolStrip.Location = new System.Drawing.Point(3, 3);
             this.BlacklistToolStrip.Name = "BlacklistToolStrip";
-            this.BlacklistToolStrip.Size = new System.Drawing.Size(426, 25);
+            this.BlacklistToolStrip.Size = new System.Drawing.Size(420, 25);
             this.BlacklistToolStrip.TabIndex = 1;
             this.BlacklistToolStrip.Text = "Blacklist Tools";
             // 
@@ -340,6 +341,7 @@
             // 
             this.CopyGroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)));
+            this.CopyGroupBox.Controls.Add(this.HybridCheckBox);
             this.CopyGroupBox.Controls.Add(this.BackupCheckBox);
             this.CopyGroupBox.Controls.Add(this.ResumeCheckBox);
             this.CopyGroupBox.Controls.Add(this.PurgeCheckBox);
@@ -456,6 +458,17 @@
             this.SaveDefaultCheckBox.UseVisualStyleBackColor = true;
             this.SaveDefaultCheckBox.Visible = false;
             // 
+            // HybridCheckBox
+            // 
+            this.HybridCheckBox.AutoSize = true;
+            this.HybridCheckBox.Location = new System.Drawing.Point(84, 157);
+            this.HybridCheckBox.Name = "HybridCheckBox";
+            this.HybridCheckBox.Size = new System.Drawing.Size(56, 17);
+            this.HybridCheckBox.TabIndex = 96;
+            this.HybridCheckBox.Text = "Hybrid";
+            this.HybridCheckBox.UseVisualStyleBackColor = true;
+            this.HybridCheckBox.CheckedChanged += new System.EventHandler(this.HybridCheckBox_CheckedChanged);
+            // 
             // BackupFolderDialog
             // 
             this.AcceptButton = this.DialogOkButton;
@@ -525,5 +538,6 @@
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ToolStripButton BlacklistAddButton;
         private System.Windows.Forms.ToolStripButton BlacklistDeleteButton;
+        private System.Windows.Forms.CheckBox HybridCheckBox;
     }
 }

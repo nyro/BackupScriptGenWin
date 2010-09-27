@@ -131,5 +131,21 @@ namespace BackupScriptGenWin
                 MoveCheckBox.Checked = false;
             }
         }
+
+        private void HybridCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (HybridCheckBox.Checked)
+            {
+                BackupCheckBox.Enabled = false;
+                BackupCheckBox.Checked = true;
+                ResumeCheckBox.Enabled = false;
+                ResumeCheckBox.Checked = true;
+            }
+            else
+            {
+                BackupCheckBox.Enabled = true;
+                ResumeCheckBox.Enabled = true;
+            }
+        }
     }
 }
